@@ -2,7 +2,7 @@
   "name": "wag",
   "version": "0.0.1",
   "description": "Feature oriented based web framework",
-  "main": "app.js",
+  "main": "./lib/wag.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/cfsghost/wag.js",
   "dependencies": {
-    "express": "~4.3.1"
+    "express": "~4.3.1",
+    "async": "~0.9.0"
   }
 }

@@ -1,0 +1,26 @@
+html
+	head
+		title Guestbook
+		link(href='/css/default.css', media='all', rel='stylesheet', type='text/css')
+		link(href='/css/semantic.min.css', media='all', rel='stylesheet', type='text/css')
+		script(type='text/javascript', src='/js/jquery.min.js')
+		script(type='text/javascript', src='/js/semantic.min.js')
+
+	body
+		h1.ui.header Guestbook
+			div.sub.header Let's leave a message
+
+		div.ui.teal.inverted.menu
+			a.active.item(href='/')
+				i.home.icon
+				!='Home'
+			a.item(href='/post')
+				i.pencil.icon
+				!='Post'
+
+		div
+
+			each article in articles
+				div.ui.message
+					div.header= article.title
+					div= article.text
