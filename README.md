@@ -1,4 +1,4 @@
 wag.js
 ======
 
-Feature-oriented based web API Framework
+Feature-oriented based application Framework
