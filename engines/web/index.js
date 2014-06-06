@@ -27,9 +27,11 @@ Web.prototype.routers = function(callback) {
 Web.prototype.listen = function(port) {
 	var self = this;
 
+	var _port = port || Web.Wag.settings.web.port;
+
 	self.configure(function() {
 		self.routers(function() {
-			self.server = self.express.listen(port);
+			self.server = self.express.listen(_port);
 		});
 	});
 };
