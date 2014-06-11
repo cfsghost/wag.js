@@ -4,6 +4,8 @@ var express = require('express');
 var Web = module.exports = function() {
 	var self = this;
 
+	Web.super_.call(this);
+
 	self.express = express();
 	self.server = null;
 };
