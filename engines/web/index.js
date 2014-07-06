@@ -1,10 +1,10 @@
 
 var express = require('express');
 
-var Web = module.exports = function() {
+var Web = module.exports = function(scope) {
 	var self = this;
 
-	Web.super_.call(this);
+	Web.super_.call(this, scope);
 
 	self.express = express();
 	self.server = null;
