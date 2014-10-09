@@ -34,3 +34,7 @@ app.run(function() {
 	app.engine.listen(8000);
 });
 ```
+
+License
+-
+MIT
