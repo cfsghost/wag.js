@@ -17,16 +17,18 @@ npm install wag.js
 Usage
 -
 
+Here is an example to show how to build up a web service with wag.js.
+
 ```javascript
-	var Wag = require('wag.js');
+var Wag = require('wag.js');
 
-	var wag = new Wag();
+var wag = new Wag();
 
-	// Add web feature
-	var app = wag.mixin('web');
+// Add web feature engine
+var app = wag.mixin('web');
 
-	// Run
-	app.run(function() {
-		app.engine.listen(8000);
-	});
+// Run
+app.run(function() {
+	app.engine.listen(8000);
+});
 ```
