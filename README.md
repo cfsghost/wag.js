@@ -5,7 +5,7 @@ Feature-oriented based application Framework.
 
 [![NPM](https://nodei.co/npm/wag.js.png)](https://nodei.co/npm/wag.js/)
 
-[![Build Status](https://travis-ci.org/cfsghost/wag.js.svg?branch=master)](https://travis-ci.org/cfsghost/wag.js?style=flat)
+[![Build Status](http://img.shields.io/travis/cfsghost/wag.js.svg?style=flat)](https://travis-ci.org/cfsghost/wag.js)
 
 Installation
 -
