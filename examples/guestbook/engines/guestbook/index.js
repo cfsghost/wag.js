@@ -1,9 +1,9 @@
 "use strict";
 
-var Guestbook = module.exports = function() {
+var Guestbook = module.exports = function(scope) {
 	var self = this;
 
-	Guestbook.super_.call(this);
+	scope.$super(Guestbook);
 
 	self.articles = [
 		{
@@ -20,8 +20,10 @@ var Guestbook = module.exports = function() {
 Guestbook.prototype.routers = function(callback) {
 	var self = this;
 
-	function routeInit() {
+	// Call super
+	self.scope.$super(Guestbook, 'routers')(function() {
 
+		// Add route rules
 		self.express.get('/', function(req, res) {
 			res.render('index', {
 				articles: self.articles
@@ -49,7 +51,5 @@ Guestbook.prototype.routers = function(callback) {
 		});
 
 		callback();
-	}
-
-	Guestbook.super_.prototype.routers.apply(this, [ routeInit ]);
+	});
 };

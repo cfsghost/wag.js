@@ -4,10 +4,10 @@ var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
 
-var Web = module.exports = function() {
+var Web = module.exports = function(scope) {
 	var self = this;
 
-	Web.super_.call(this);
+	scope.$super(Web);
 };
 
 Web.prototype.configure = function(callback) {
