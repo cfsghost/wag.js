@@ -1,7 +1,7 @@
 var Dad = module.exports = function(scope) {
 	var self = this;
 
-	Dad.super_.call(this, scope);
+	scope.$super(Dad);
 };
 
 Dad.prototype.helloDad = function() {
