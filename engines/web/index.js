@@ -1,10 +1,11 @@
+"use strict";
 
 var express = require('express');
 
 var Web = module.exports = function(scope) {
 	var self = this;
 
-	Web.super_.call(this, scope);
+	scope.$super(Web);
 
 	self.express = express();
 	self.server = null;
