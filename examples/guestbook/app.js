@@ -9,6 +9,6 @@ app.mixin([
 	'guestbook'
 ]);
 
-app.run(function() {
-	app.engine.listen(8000);
+app.run(function(feature) {
+	feature.listen(8000);
 });

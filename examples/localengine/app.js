@@ -9,7 +9,7 @@ var app = wag.mixin([
 	'./mom.js'
 ]);
 
-app.run(function() {
-	app.engine.helloDad();
-	app.engine.helloMom();
+app.run(function(feature) {
+	feature.helloDad();
+	feature.helloMom();
 });

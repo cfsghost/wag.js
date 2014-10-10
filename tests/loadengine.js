@@ -13,13 +13,13 @@ test('Loading engine', function(t) {
 	]);
 	t.pass('Added engines');
 
-	app.run(function() {
+	app.run(function(feature) {
 		t.pass('Initialized engine');
 
-		app.engine.helloDad();
+		feature.helloDad();
 		t.pass('Called method in dad.js');
 
-		app.engine.helloMom();
+		feature.helloMom();
 		t.pass('Called method in mom.js');
 	});
 });
