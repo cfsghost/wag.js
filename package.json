@@ -1,6 +1,6 @@
 {
   "name": "wag.js",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Feature oriented based web framework",
   "main": "./lib/wag.js",
   "scripts": {
